@@ -1,7 +1,7 @@
 # CS110
 Java Coding Examples
 
- * SlideTilePuzzle.java
+ /* SlideTilePuzzle.java
  * Creates a 4x4 slide puzzle containing the numbers 1-15 and an open spot; a
  * chosen tile slides into the open spot.  Assume all inputted values are 
  * appropriate; user solves. (Note: Does not necessarily solve.)
@@ -9,7 +9,7 @@ Java Coding Examples
 
 import java.util.Scanner;
 
-public class InClass11_SlideTilePuzzle
+public class SlideTilePuzzle
 {
   public static void main(String[] args)
   {
@@ -26,7 +26,7 @@ public class InClass11_SlideTilePuzzle
     int spcLocX;
     int spcLocY;
     boolean posMv;
-    int locSvr;   // ???
+    int locSvr;
     char play;
     
     
@@ -85,22 +85,22 @@ public class InClass11_SlideTilePuzzle
     
     
     
-//    // CHECK TILE LOCATION SENSIBLE (method tileMv)
-//    posMv=tileMv(tileLoc,spcLoc);
-//    while(posMv=false)
-//    {
-//      System.out.print("Invalid move.  Reenter tile to move: ");
-//      tile=sc.nextInt();
-//      for(i=0;i<4;i++)
-//      {
-//        for(j=0;j<4;j++)
-//        {
-//          if(tile==(puz[i][j]))
-//            tileLoc=puz[i][j];
-//        }
-//      }
-//      posMv=tileMv(tileLoc,spcLoc);
-//    }
+//    CHECK TILE LOCATION SENSIBLE (method tileMv)
+    posMv=tileMv(tileLoc,spcLoc);
+    while(posMv=false)
+    {
+      System.out.print("Invalid move.  Reenter tile to move: ");
+      tile=sc.nextInt();
+      for(i=0;i<4;i++)
+      {
+       for(j=0;j<4;j++)
+        {
+          if(tile==(puz[i][j]))
+            tileLoc=puz[i][j];
+        }
+      }
+      posMv=tileMv(tileLoc,spcLoc);
+    }
     
     // MOVE TILE
     locSvr=puz[tileLocX][tileLocY];
@@ -143,15 +143,15 @@ public class InClass11_SlideTilePuzzle
   }
     
   
-//  public static boolean tileMv(int tile,int spc)
-//  {
-//    boolean aprLoc;
-//    
-//    aprLoc=true;
-//    // CHECK TILE LOCATION SENSIBLE
-//    if()
-//    
-//    return aprLoc;
-//  }
+  public static boolean tileMv(int tile,int spc)
+  {
+    boolean aprLoc;
+    
+    aprLoc=true;
+    // CHECK TILE LOCATION SENSIBLE
+    if()
+    
+   return aprLoc;
+  }
 }
 
